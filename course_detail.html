@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Online Learning Platform</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <img src="images/logo.png" alt="LOGO" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fa-solid fa-xmark"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- course detail -->
+    <section id="course-detail">
+      <div class="overview">
+        <img src="images/c1.png" alt="" />
+        <div class="title">
+          <div class="name">
+            <h1>Advanced Web Development</h1>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <span>$199.99</span>
+        </div>
+
+        <p>
+          Modern Web Development form begining, all the way up to expert
+          level!!!
+        </p>
+
+        <div class="instructor">
+          <h3>Instructor</h3>
+          <div class="instructor-details">
+            <i class="fa-solid fa-user"></i>
+            <div class="user-name">
+              <h3>John Doe</h3>
+              <p>Web Developer at Google</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <div class="course-desc">
+          <h3>Course overview</h3>
+          <p>
+            Web development refers to the process of building and maintaining
+            websites and web applications that are accessible over the internet.
+            It encompasses a wide range of tasks, from creating simple static
+            web pages to developing complex dynamic web applications. Web
+            development typically involves a combination of programming, markup
+            languages, design, and server administration.
+          </p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <h3>This course includes:</h3>
+        <div class="summary-point">
+          <i class="fa-solid fa-video"></i>
+          <p>48 Hours Videos</p>
+        </div>
+        <div class="summary-point">
+          <i class="fa-solid fa-file"></i>
+          <p>26 Articles</p>
+        </div>
+        <div class="summary-point">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <p>Downloadable Resources</p>
+        </div>
+        <div class="summary-point">
+          <i class="fa-solid fa-infinity"></i>
+          <p>Lifetime Access</p>
+        </div>
+        <div class="summary-point">
+          <i class="fa-solid fa-tv"></i>
+          <p>Access to Mobile and TV</p>
+        </div>
+        <div class="summary-point">
+          <i class="fa-solid fa-paperclip"></i>
+          <p>Assignments</p>
+        </div>
+        <div class="summary-point">
+          <i class="fa-solid fa-medal"></i>
+          <p>Certificate on Completion</p>
+        </div>
+        <button>Enroll Now</button>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <section id="footer">
+      <div class="option">
+        <div class="top-products">
+          <h3>Top Products</h3>
+          <ul>
+            <li><a href="#">Manage Reputation</a></li>
+            <li><a href="#">Power Tools</a></li>
+            <li><a href="#">Manage Reputation</a></li>
+            <li><a href="#">Marketing Service</a></li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <h3>Top Products</h3>
+          <ul>
+            <li><a href="#">Manage Reputation</a></li>
+            <li><a href="#">Power Tools</a></li>
+            <li><a href="#">Manage Reputation</a></li>
+            <li><a href="#">Marketing Service</a></li>
+          </ul>
+        </div>
+        <div class="fea">
+          <h3>Top Products</h3>
+          <ul>
+            <li><a href="#">Manage Reputation</a></li>
+            <li><a href="#">Power Tools</a></li>
+            <li><a href="#">Manage Reputation</a></li>
+            <li><a href="#">Marketing Service</a></li>
+          </ul>
+        </div>
+        <div class="resourses">
+          <h3>Top Products</h3>
+          <ul>
+            <li><a href="#">Manage Reputation</a></li>
+            <li><a href="#">Power Tools</a></li>
+            <li><a href="#">Manage Reputation</a></li>
+            <li><a href="#">Marketing Service</a></li>
+          </ul>
+        </div>
+        <div class="news">
+          <h3>Newsletter</h3>
+          <p>You can trust us</p>
+          <input
+            class="footer-form"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email address"
+          />
+          <button class="footer-form">SUBSCRIBE</button>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <p>Copyright &#169; 2023 MyWebsite. All rights reserved.</p>
+        <div class="footer-socials">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("open");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("open");
+      });
+    </script>
+  </body>
+</html>
